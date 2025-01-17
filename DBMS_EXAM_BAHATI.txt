@@ -11,6 +11,9 @@ Query OK, 1 row affected (0.007 sec)
 
 MariaDB [(none)]> use exam;
 Database changed
+
+question 1:
+
 MariaDB [exam]> create table Client_master(clientNO int(4)primary key auto_increment,Name varchar(225),Address varchar(255),City varchar(255),State varchar(255),Bal_due int(5));
 Query OK, 0 rows affected (0.015 sec)
 
@@ -59,6 +62,7 @@ MariaDB [exam]> select * from Client_master;
 +----------+---------------------+---------+-------------------+-----------+---------+
 5 rows in set (0.001 sec)
 
+question 2:
 
 MariaDB [exam]> select * from Client_master where bal_due>500;
 +----------+---------------------+---------+-------------------+-----------+---------+
@@ -71,6 +75,8 @@ MariaDB [exam]> select * from Client_master where bal_due>500;
 |        5 | nkundimana innocent | huy745  | southern province | HUYE      |  450000 |
 +----------+---------------------+---------+-------------------+-----------+---------+
 5 rows in set (0.001 sec)
+
+question 3:
 
 MariaDB [exam]> Update Client_master SET Bal_due=5100 where clientNO=3;
 Query OK, 1 row affected (0.018 sec)
@@ -87,7 +93,7 @@ MariaDB [exam]> select * from client_master;
 |        5 | nkundimana innocent | huy745  | southern province | HUYE      |  450000 |
 +----------+---------------------+---------+-------------------+-----------+---------+
 5 rows in set (0.001 sec)
-
+question 4:
 
 MariaDB [exam]> ALTER TABLE CLIENT_MASTER RENAME TO Client12;
 Query OK, 0 rows affected (0.017 sec)
@@ -101,6 +107,8 @@ MariaDB [exam]> show tables;
 1 row in set (0.002 sec)
 
 MariaDB [exam]>
+
+PART B:
 
 
 MariaDB [exam]> create table department(depid int(4)primary key auto_increment,dep_name varchar(255),address varchar(255),detlocation varchar(255),depoffice varchar(255));
