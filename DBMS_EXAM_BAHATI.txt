@@ -11,6 +11,7 @@ Query OK, 1 row affected (0.007 sec)
 
 MariaDB [(none)]> use exam;
 Database changed
+PART A:
 
 question 1:
 
@@ -110,6 +111,7 @@ MariaDB [exam]>
 
 PART B:
 
+QUESTION 6:
 
 MariaDB [exam]> create table department(depid int(4)primary key auto_increment,dep_name varchar(255),address varchar(255),detlocation varchar(255),depoffice varchar(255));
 Query OK, 0 rows affected (0.033 sec)
@@ -239,6 +241,8 @@ MariaDB [exam]> select MAX(empsalary)  AS empsalary from employee HAVING AVG(emp
 
 MariaDB [exam]>
 
+QUESTION 7
+
 MariaDB [exam]> create table student (studentid int(6)primary key auto_increment,fullname varchar(25),gender varchar(2),age int(2),de
 partment varchar(30));
 Query OK, 0 rows affected (0.034 sec)
@@ -334,6 +338,8 @@ MariaDB [exam]> select * from student;
 |         5 | MUTESI WINE  | F      |   21 | ECONOMICS  |
 +-----------+--------------+--------+------+------------+
 3 rows in set (0.001 sec)
+
+QUESTION 10:
 
 
 MariaDB [exam]> create table sales(saleNo int(4)primary key auto_increment,salesname varchar(255),Branch varchar(255),saleamount int(4),DOB varchar(255));
